@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+$nutrien-green: #4C9E00;
+$app-white: #FFFAFA; // snow
+$app-dark-grey: #4B4B4B;
+$app-light-grey: #CCCCCC;
+
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Statscan-logo {
+  max-width: 80%;
+  height: auto;
+}
+
+.Bundesamt-logo {
+  max-width: 60%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.App-header {
+  background-color: $app-dark-grey; /* #b7b5b5 #3F495C #282C34 */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: $app-white;
+}
+
+
+
+
+.link {
+  display: inline;
+}
+
+
+.spacing {
+  margin-left: 100px;
+}
+
+.checkmark {
+    margin-left: 5px;
+}
+
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-bottom: 1px solid $app-white;
+  background-color: transparent;
+  color: $app-white;
+  -webkit-appearance: none; /* Remove default styling in Webkit browsers */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  appearance: none; /* Remove default styling in modern browsers */
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $app-white;
+  }
+}
+
+
+.get-data-button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: 50px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  color: $app-white;
+  background-color: $nutrien-green;
+  border: 2px solid $nutrien-green;
+  border-radius: 10px;
+    
+  &:hover {
+      background-color: #88D600;
+      color: $app-white;
+  }
+}
+
+
+.segmented-buttons {
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  button {
+    background-color: $app-light-grey;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+
+    &:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    &:nth-child(2) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    &.active {
+      background-color: $nutrien-green;
+      color: $app-white;
+    }
+  }
+}

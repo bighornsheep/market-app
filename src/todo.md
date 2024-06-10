@@ -1,0 +1,3 @@
+- German file format
+- German options
+- Netlify Git integration
