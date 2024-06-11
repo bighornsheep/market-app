@@ -128,7 +128,7 @@ export default function StatisticsCanada() {
 				>
 					{selectedOption === 'export' && <span className="checkmark">&#10003;&nbsp;</span>}
 					Export
-        </button>
+        		</button>
 
 				<button
 				className={selectedOption === 'import' ? 'active' : ''}
@@ -137,9 +137,9 @@ export default function StatisticsCanada() {
 					{selectedOption === 'import' && <span className="checkmark">&#10003;&nbsp;</span>}
 					Import
 				</button>
-      </div>
+      		</div>
 
-      <p></p>
+      		<p></p>
 
 			<div className="canada-month-selection">
 				Start:&nbsp;
@@ -156,11 +156,9 @@ export default function StatisticsCanada() {
 						<option key={index} value={year} style={{backgroundColor: "#4D4C4C", color: "snow"}}>{year}</option>
 					))}
 				</select>
-			</div>
+			
+				<p></p>
 
-      <p></p>
-
-			<div className="canada-month-selection">
 				&nbsp;&nbsp;End:&nbsp;
 				<label htmlFor="month"></label>
 				<select id="month" value={selectedEndMonth} onChange={handleEndMonthChange}>

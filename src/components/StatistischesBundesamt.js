@@ -96,6 +96,25 @@ export default function StatistischesBundesamt() {
 	return (
 		<div className='German-half'>
 			<img src={bundesamt} className="Bundesamt-logo" alt="logo" />
+
+			<div className="segmented-buttons">
+				<button
+				className='active'
+				onClick={() => {}}
+				>
+					{true && <span className="checkmark">&#10003;&nbsp;</span>}
+					Export
+				</button>
+				<button
+				className=''
+				onClick={() => {}}
+				style={{color: "#CCCCCC"}}
+				>
+					{false && <span className="checkmark">&#10003;&nbsp;</span>}
+					Import
+				</button>
+			</div>
+
 			<p></p>
 
 			<div className="german-month-selection">
@@ -106,7 +125,9 @@ export default function StatistischesBundesamt() {
 						<option key={index} value={year} style={{backgroundColor: "#4D4C4C", color: "snow"}}>{year}</option>
 					))}
 				</select>
+
 				<p></p>
+				
 				&nbsp;&nbsp;End Year:&nbsp;
 				<label htmlFor="year">&nbsp;&nbsp;</label>
 				<select id="year" value={selectedEndYear} onChange={handleEndYearChange}>
