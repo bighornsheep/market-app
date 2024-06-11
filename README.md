@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/95cf5899-0b2a-48f2-9022-e194d7d8fb25/deploy-status)](https://app.netlify.com/sites/ntr-mr-trade-data/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
