@@ -86,34 +86,22 @@ export default function StatisticsCanada() {
 		// prepare AWS Lambda function URL
 		const startPeriod = String(selectedStartYear) + "-" + (monthNumbers[selectedStartMonth]).slice(-2) + "-01";
 		const endPeriod = String(selectedEndYear) + "-" + (monthNumbers[selectedEndMonth]).slice(-2) + "-01";
-
-		console.log(startPeriod);
-		console.log(endPeriod);
 		
-		const url = "https://2yresgtk2mvb4i2vg7bf6sfd5q0xqzuf.lambda-url.us-east-2.on.aws/" +
-								`?trade=${selectedOption}` +
-								`&startPeriod=${startPeriod}` +
-								`&endPeriod=${endPeriod}`
-		
+		const url = `https://2yresgtk2mvb4i2vg7bf6sfd5q0xqzuf.lambda-url.us-east-2.on.aws/?trade=${selectedOption}&startPeriod=${startPeriod}&endPeriod=${endPeriod}`
 		const fileName = `Canada ${selectedOption} data from ${selectedStartMonth}-${selectedStartYear} to ${selectedEndMonth}-${selectedEndYear}`
-		console.log(fileName)
-
+		
 		// call AWS Lambda function
 		fetch(url)
 		.then( response => response.json() )
 		.then( data => {
 			setStatus('Success! Preparing Download...');
 			userDownloadAWSUpload(data, fileName);
-				
-			// reset loading indicator
-			setLoading(false); 
+			setLoading(false); // reset loading indicator
 		})
 		.catch( (error) => {
 			console.error('Error fetching data:', error);
 			setStatus('Error! Check inputs or contact support.');
-
-			// reset loading indicator
-			setLoading(false);
+			setLoading(false); // reset loading indicator
 		});
 	};
 
