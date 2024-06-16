@@ -2,7 +2,7 @@
 <p align="center"><i>An app to get data from two public sources.</i></p>
 <div align="center">
     <a href="">
-        <img src="https://api.netlify.com/api/v1/badges/95cf5899-0b2a-48f2-9022-e194d7d8fb25/deploy-status)](https://app.netlify.com/sites/ntr-mr-trade-data/deploys" alt="Build Badge"/>
+        <img src="https://api.netlify.com/api/v1/badges/95cf5899-0b2a-48f2-9022-e194d7d8fb25/deploy-status" alt="Build Badge"/>
     </a>
     <a href="">
         <img src="https://img.shields.io/github/stars/daspeks/market-app" alt="Stars Badge"/>
