@@ -17,10 +17,10 @@
         <img src="https://img.shields.io/github/issues/daspeks/market-app" alt="Issues Badge"/>
     </a>
     <a href="">
-        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/daspeks/market-app?color=2b9348">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/daspeks/market-app?color=2b9348" />
     </a>
     <a href="">
-        <img alt="GitHub contributors" src="https://img.shields.io/github/last-commit/daspeks/market-app">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/last-commit/daspeks/market-app" />
     </a>
 </div>
 
